@@ -3,12 +3,12 @@ import { BooksContext } from "../../Root";
 import Bookcart from "./Bookcart";
 const HomeBookList = () => {
   const booksData = useContext(BooksContext);
-  console.log(booksData);
+
   return (
     <div className="grid gap-5 lg:grid-cols-3 lg:gap-8 lg:mt-20">
       {booksData.map((book) => (
         <>
-          <Bookcart key={book.bookId} book={book}></Bookcart>
+          <Bookcart key={book.id} book={book}></Bookcart>
         </>
       ))}
     </div>
