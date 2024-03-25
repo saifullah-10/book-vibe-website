@@ -44,7 +44,7 @@ const Singlebook = () => {
       setReadData(data);
     }
   };
-  console.log(wish);
+
   return (
     <div>
       <div className="flex flex-col lg:flex-row lg:gap-8">
@@ -66,8 +66,9 @@ const Singlebook = () => {
             <div>
               <span>Tag</span>
               <div className="flex gap-3 lg:gap-5">
-                <p>#Young Adult</p>
-                <p>#Identity</p>
+                {tags.map((tag, index) => (
+                  <p key={index}>{tag}</p>
+                ))}
               </div>
             </div>
           </div>
