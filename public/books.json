@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61kllnlY7YL._AC_UL254_SR254,254_.jpg",
+    "review": "To Kill a Mockingbird is a profound and enduring novel that explores the complexities of human nature, societal norms, and the pursuit of justice. Set in the racially charged atmosphere of the American South during the 1930s, Harper Lee's masterpiece follows the journey of young Scout Finch as she navigates the moral landscape of her hometown. The novel's central plot revolves around the trial of Tom Robinson, a black man falsely accused of raping a white woman, and the courageous lawyer, Atticus Finch, who defends him. Through Scout's innocent yet perceptive narration, Lee skillfully addresses themes of prejudice, empathy, and the loss of innocence. The characters, from the wise and compassionate Atticus to the enigmatic Boo Radley, are richly drawn and memorable, adding depth and authenticity to the story. With its timeless message of tolerance and understanding, To Kill a Mockingbird continues to resonate with readers of all ages, cementing its status as a literary classic.",
+    "totalPages": 281,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Classic", "Literary Fiction", "Coming of Age"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 2,
+    "bookName": "A Court Of Thorns And Roses",
+    "author": "George Orwell",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81RrEEMiOCL._AC_UL254_SR254,254_.jpg",
+    "review": "1984 is a chilling and prescient dystopian novel that offers a stark warning about the dangers of totalitarianism, surveillance, and the erosion of individual freedoms. Set in a bleak and oppressive world where the government exercises complete control over every aspect of life, George Orwell's masterpiece follows the protagonist, Winston Smith, as he rebels against the oppressive regime of Big Brother. Through Winston's harrowing journey, Orwell explores themes of truth, manipulation, and the power of language to shape reality. The novel's depiction of a society where truth is subjective and dissent is punishable by death remains as relevant today as it was when it was first published. With its haunting vision of a future ruled by fear and oppression, 1984 serves as a powerful reminder of the importance of vigilance and resistance in the face of tyranny.",
+    "totalPages": 328,
+    "rating": 4.7,
+    "category": "Science Fiction",
+    "tags": ["Dystopian", "Political Fiction", "Social Commentary"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 3,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/919XM42JQlL._AC_UL254_SR254,254_.jpg",
+    "review": "The Great Gatsby is a timeless classic that captures the essence of the Jazz Age and the pursuit of the American Dream. Set against the backdrop of the roaring 1920s, F. Scott Fitzgerald's novel follows the enigmatic Jay Gatsby as he seeks to win back the heart of his lost love, Daisy Buchanan. Through the eyes of narrator Nick Carraway, Fitzgerald paints a vivid portrait of a society obsessed with wealth, status, and excess. The novel's themes of love, disillusionment, and the corruption of the American Dream resonate just as powerfully today as they did nearly a century ago. With its lyrical prose, complex characters, and evocative imagery, The Great Gatsby remains one of the greatest works of American literature, a timeless meditation on the fleeting nature of happiness and the emptiness of materialism.",
+    "totalPages": 180,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Classic", "Literary Fiction", "Romance"],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 4,
+    "bookName": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/818PqOiT44L._AC_UL254_SR254,254_.jpg",
+    "review": "Harry Potter and the Philosopher's Stone is a captivating and enchanting tale that introduces readers to the magical world of Hogwarts School of Witchcraft and Wizardry. Written by the incomparable J.K. Rowling, this first installment in the Harry Potter series follows the young orphan, Harry Potter, as he discovers his true heritage and embarks on a journey of self-discovery and adventure. From the moment Harry steps onto platform nine and three-quarters, readers are transported to a world filled with wonder, danger, and friendship. Rowling's imaginative storytelling, richly drawn characters, and intricate world-building make for an unforgettable reading experience. With its themes of love, loyalty, and the power of friendship, Harry Potter and the Philosopher's Stone continues to captivate readers of all ages, inspiring countless imaginations and sparking a global phenomenon.",
+    "totalPages": 223,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": ["Magic", "Children's Fiction", "Adventure"],
+    "publisher": "Bloomsbury Publishing",
+    "yearOfPublishing": 1997
+  },
+  {
+    "bookId": 5,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81uxN1LVsML._AC_UL254_SR254,254_.jpg",
+    "review": "Pride and Prejudice is a charming and witty novel that remains one of the greatest works of English literature. Written by the beloved Jane Austen, this timeless masterpiece follows the spirited Elizabeth Bennet as she navigates the social intricacies of 19th-century England. From the moment she meets the enigmatic Mr. Darcy, Elizabeth finds herself drawn into a whirlwind of misunderstandings, misjudgments, and romantic tension. Through Austen's sparkling prose and keen observations, Pride and Prejudice offers a delightful commentary on love, class, and the complexities of human nature. The novel's memorable characters, including the sharp-tongued Elizabeth and the brooding Mr. Darcy, continue to captivate readers with their wit and charm. With its timeless appeal and universal themes, Pride and Prejudice remains a beloved classic that continues to enchant readers of all ages.",
+    "totalPages": 279,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Classic", "Romance", "Satire"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Catcher in the Rye",
+    "author": "D. Salinger",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41XZlhQ+5NL._AC_UL254_SR254,254_.jpg",
+    "review": "The Catcher in the Rye is a poignant and introspective novel that captures the essence of adolescence with unparalleled honesty and depth. Written by the reclusive J.D. Salinger, this literary classic follows the misanthropic teenager, Holden Caulfield, as he navigates the complexities of teenage angst, alienation, and the search for identity. Set against the backdrop of New York City in the 1950s, the novel offers a raw and unfiltered glimpse into the mind of a young man grappling with the disillusionment of adulthood. Through Holden's candid and often irreverent narration, Salinger explores themes of loss, innocence, and the struggle to find one's place in the world. The novel's enduring popularity lies in its ability to resonate with readers of all ages, offering a poignant reminder of the universal challenges of growing up. With its timeless relevance and poignant insights, The Catcher in the Rye remains a seminal work of American literature, inspiring generations of readers to embrace their own individuality and confront the complexities of the human experience.",
+    "totalPages": 224,
+    "rating": 4.4,
+    "category": "Fiction",
+    "tags": ["Coming of Age", "Literary Fiction", "Psychological"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  }
+]
