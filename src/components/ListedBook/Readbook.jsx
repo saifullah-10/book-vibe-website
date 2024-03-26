@@ -44,6 +44,7 @@ const Readbook = ({ book }) => {
             </div>
             <div className="flex">
               <img src={page} alt="" />
+
               <p>Page {totalPages}</p>
             </div>
           </div>

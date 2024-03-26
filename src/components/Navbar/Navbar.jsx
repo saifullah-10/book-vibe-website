@@ -43,6 +43,18 @@ const Navbar = () => {
                   <a>Pages to Read</a>
                 </NavLink>
               </li>
+              <li>
+                <NavLink to={"/suggestion"}>
+                  {" "}
+                  <a>Suggestion</a>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/aboutus"}>
+                  {" "}
+                  <a>About Us</a>
+                </NavLink>
+              </li>
             </ul>
           </div>
           <a className="text-xl btn btn-ghost">Book Vib3</a>
@@ -64,6 +76,18 @@ const Navbar = () => {
               <NavLink to={"/pagetoread"}>
                 {" "}
                 <a>Pages to Read</a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/contact"}>
+                {" "}
+                <a>Contact</a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/aboutus"}>
+                {" "}
+                <a>About Us</a>
               </NavLink>
             </li>
           </ul>

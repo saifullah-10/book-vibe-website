@@ -9,6 +9,8 @@ import Home from "./components/Homepage/Home";
 import Singlebook from "./components/Singlebookpage/Singlebook";
 import ListedBook from "./components/ListedBook/ListedBook";
 import PageToRead from "./components/PageToRead/PageToRead";
+import Contact from "./components/Contact/Contact";
+import AboutUs from "./components/Navbar/Aboutus/AboutUs";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/single&book/:bookId",
         element: <Singlebook></Singlebook>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs></AboutUs>,
       },
     ],
   },

@@ -21,7 +21,7 @@ const Singlebook = () => {
     tags,
     rating,
     yearOfPublishing,
-  } = singleBookData;
+  } = singleBookData || {};
   const handleWish = (currentWish) => {
     const isDataRead = readData.find(
       (data) => data.bookId == currentWish.bookId
@@ -66,7 +66,7 @@ const Singlebook = () => {
             <div>
               <span>Tag</span>
               <div className="flex gap-3 lg:gap-5">
-                {tags.map((tag, index) => (
+                {tags?.map((tag, index) => (
                   <p key={index}>{tag}</p>
                 ))}
               </div>

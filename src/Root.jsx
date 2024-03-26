@@ -10,7 +10,7 @@ function Root() {
   const [wishList, setWishList] = useState([]);
   const [booksData, setBooksData] = useState([]);
   useEffect(() => {
-    fetch("books.json")
+    fetch("/books.json")
       .then((res) => res.json())
       .then((data) => setBooksData(data));
   }, []);
@@ -19,7 +19,7 @@ function Root() {
     <>
       <Wishlist.Provider value={[wishList, setWishList]}>
         <ReadBook.Provider value={[readBook, setReadBook]}>
-          <section className="max-w-[1440px] w-[98%] lg:w-[80%] mx-auto mt-3 lg:mt-5">
+          <section className="max-w-[1440px] w-[98%] lg:w-[80%] mx-auto mt-3 lg:mt-5 sticky top-0 z-20">
             <Navbar></Navbar>
           </section>
           <BooksContext.Provider value={booksData}>
