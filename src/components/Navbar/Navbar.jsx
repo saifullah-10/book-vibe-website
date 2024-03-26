@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 font-['Work_Sans']">
         <div className="navbar-start max-sm:w-[50%] justify-between lg:justify-normal">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,76 +28,86 @@ const Navbar = () => {
             >
               <li>
                 <NavLink to={"/"}>
-                  <a>Home</a>
+                  <a className="text-base font-semibold lg:text-lg">Home</a>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={"/listedbook"}>
                   {" "}
-                  <a>Listed Books</a>
+                  <a className="text-base font-semibold lg:text-lg">
+                    Listed Books
+                  </a>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={"/pagetoread"}>
                   {" "}
-                  <a>Pages to Read</a>
+                  <a className="text-base font-semibold lg:text-lg">
+                    Pages to Read
+                  </a>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={"/contact"}>
                   {" "}
-                  <a>Contact</a>
+                  <a className="text-base font-semibold lg:text-lg">Contact</a>
                 </NavLink>
               </li>
               <li>
                 <NavLink to={"/aboutus"}>
                   {" "}
-                  <a>About Us</a>
+                  <a className="text-lg font-semibold">About Us</a>
                 </NavLink>
               </li>
             </ul>
           </div>
-          <a className="text-xl btn btn-ghost">Book Vib3</a>
+          <a className="text-xl btn btn-ghost text-[#131313] lg:text-3xl font-bold">
+            E-Book Store
+          </a>
         </div>
         <div className="hidden navbar-center lg:flex">
           <ul className="px-1 menu menu-horizontal">
             <li>
               <NavLink to={"/"}>
-                <a>Home</a>
+                <a className="text-base font-semibold lg:text-lg">Home</a>
               </NavLink>
             </li>
             <li>
               <NavLink to={"/listedbook"}>
                 {" "}
-                <a>Listed Books</a>
+                <a className="text-base font-semibold lg:text-lg">
+                  Listed Books
+                </a>
               </NavLink>
             </li>
             <li>
               <NavLink to={"/pagetoread"}>
                 {" "}
-                <a>Pages to Read</a>
+                <a className="text-base font-semibold lg:text-lg">
+                  Pages to Read
+                </a>
               </NavLink>
             </li>
             <li>
               <NavLink to={"/contact"}>
                 {" "}
-                <a>Contact</a>
+                <a className="text-base font-semibold lg:text-lg">Contact</a>
               </NavLink>
             </li>
             <li>
               <NavLink to={"/aboutus"}>
                 {" "}
-                <a>About Us</a>
+                <a className="text-base font-semibold lg:text-lg">About Us</a>
               </NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <div className="flex gap-1 lg:gap-3">
-            <a className="px-3 py-2 lg:py-3 lg:px-6 rounded-xl bg-[#23BE0A] cursor-pointer">
+            <a className="px-3 text-white py-2 lg:py-3 lg:px-6 rounded-xl bg-[#23BE0A] cursor-pointer text-base font-semibold lg:text-lg">
               Sign In
             </a>
-            <a className="px-3 py-2 lg:py-3 lg:px-6 rounded-xl bg-[#59C6D2] cursor-pointer">
+            <a className="px-3 text-white py-2 lg:py-3 lg:px-6 rounded-xl bg-[#59C6D2] cursor-pointer text-base font-semibold lg:text-lg">
               Sign Up
             </a>
           </div>
