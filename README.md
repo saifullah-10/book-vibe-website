@@ -1,8 +1,12 @@
-# React + Vite
+Website Name: E-Book Store
+Website URL:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
 
-Currently, two official plugins are available:
+- Full Resposive For Mobile Device
+- Sorting Books By (Publish Year, Ratings, Page Number Of Book)
+- Seperate Reading Book List And Wishlist For Easy Access
+- You Can Suggest Us To Store Specific Books By Contact Us
+- Understandable User Interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thank You.
