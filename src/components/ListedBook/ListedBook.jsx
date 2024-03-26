@@ -1,28 +1,39 @@
-import { useContext } from "react";
+import { useState } from "react";
 import Readbook from "./Readbook";
-import { ReadBook, Wishlist } from "../../Root";
 
 const ListedBook = () => {
-  const [readbook, setReadBook] = useContext(ReadBook);
-  const [wishBooks] = useContext(Wishlist);
+  const item = localStorage.getItem("bookList");
+  const [readbook, setReadBook] = useState(JSON.parse(item) || []);
+
+  const wishItem = localStorage.getItem("wishList");
+  const [wishBooks, setWishBook] = useState(JSON.parse(wishItem) || []);
   const sortByRating = () => {
-    const sort = [].concat(readbook).sort((a, b) => b.rating - a.rating);
-    setReadBook(sort);
+    const sortRead = [].concat(readbook).sort((a, b) => b.rating - a.rating);
+    const sortWish = [].concat(wishBooks).sort((a, b) => b.rating - a.rating);
+    setReadBook(sortRead);
+    setWishBook(sortWish);
   };
   const sortByPage = () => {
-    const sort = []
+    const sortRead = []
       .concat(readbook)
       .sort((a, b) => b.totalPages - a.totalPages);
-    setReadBook(sort);
+    const sortWish = []
+      .concat(wishBooks)
+      .sort((a, b) => b.totalPages - a.totalPages);
+    setReadBook(sortRead);
+    setWishBook(sortWish);
   };
   const sortByYear = () => {
-    const sort = []
+    const sortRead = []
       .concat(readbook)
       .sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-    setReadBook(sort);
-    console.log(sort);
+    const sortWish = []
+      .concat(wishBooks)
+      .sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+    setReadBook(sortRead);
+    setWishBook(sortWish);
   };
-  console.log(readbook);
+  const [state, setState] = useState(true);
   return (
     <div className="font-['Work_Sans']">
       <div className="w-full py-5 mb-4 text-center rounded-lg lg:mb-8 lg:py-8 bg-slate-200">
@@ -58,7 +69,8 @@ const ListedBook = () => {
             role="tab"
             className="tab"
             aria-label="Read Books"
-            checked
+            onClick={() => setState(true)}
+            checked={state ? true : false}
           />
           <div
             role="tabpanel"
@@ -81,12 +93,14 @@ const ListedBook = () => {
             role="tab"
             className="tab"
             aria-label="Wishlist Books"
+            onClick={() => setState(false)}
+            checked={!state ? true : false}
           />
           <div
             role="tabpanel"
             className="p-6 tab-content bg-base-100 border-base-300 rounded-box"
           >
-            {wishBooks.length > 0 ? (
+            {wishBooks.length ? (
               wishBooks.map((book) => (
                 <Readbook key={book.bookId} book={book}></Readbook>
               ))

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HomeTopSection = () => {
   return (
     <div>
@@ -12,9 +14,11 @@ const HomeTopSection = () => {
               Box Office News!
             </h1>
             <h1 className="py-6">Books to freshen up your bookshelf</h1>
-            <button className="btn bg-[#23BE0A] text-white font-bold  text-lg lg:text-xl">
-              View The List
-            </button>
+            <Link to={"/listedbook"}>
+              <button className="btn bg-[#23BE0A] text-white font-bold  text-lg lg:text-xl">
+                View The List
+              </button>
+            </Link>
           </div>
         </div>
       </div>

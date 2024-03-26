@@ -1,12 +1,14 @@
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { BooksContext } from "../../Root";
-import { ReadBook } from "../../Root";
-import { Wishlist } from "../../Root";
+
+import { ReadBook, Wishlist } from "../../Root";
+import toast, { Toaster } from "react-hot-toast";
 const Singlebook = () => {
   const data = useParams();
   const allData = useContext(BooksContext);
   const [readData, setReadData] = useContext(ReadBook);
+
   const [wish, setWish] = useContext(Wishlist);
   const bookid = data.bookId;
   const singleBookData = allData.find((data) => data.bookId == bookid);
@@ -28,26 +30,36 @@ const Singlebook = () => {
     );
     const isWishlist = wish.find((data) => data.bookId == currentWish.bookId);
     if (isDataRead) {
-      alert("add");
+      const notify = () => toast.error("Already Read This Book");
+      notify();
     } else if (isWishlist) {
-      alert("add wish");
+      const notify = () => toast.error("Already Add In WishList");
+      notify();
     } else {
       const allWish = [...wish, currentWish];
+
+      localStorage.setItem("wishList", JSON.stringify(allWish));
       setWish(allWish);
+      const notify = () => toast.success("Add To WishList");
+      notify();
     }
   };
   const isAppear = (obj) => {
     if (readData.find((data) => data.bookId == obj.bookId)) {
-      alert("apper");
+      const notify = () => toast.error("Already Add In ReadList");
+      notify();
     } else {
       const data = [...readData, obj];
+      localStorage.setItem("bookList", JSON.stringify(data));
       setReadData(data);
+      const notify = () => toast.success("Add To ReadList");
+      notify();
     }
   };
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row lg:gap-8 font-['Work_Sans']">
+      <div className="flex flex-col mt-6  lg:flex-row lg:gap-8 font-['Work_Sans']">
         <div className="flex items-center justify-center py-4 bg-slate-300 lg:w-1/2 lg:py-10 lg:self-start rounded-3xl">
           <img
             className="lg:w-[500px] w-[300px] rounded-xl"
@@ -137,6 +149,7 @@ const Singlebook = () => {
           </div>
         </div>
       </div>
+      <Toaster></Toaster>
     </div>
   );
 };
