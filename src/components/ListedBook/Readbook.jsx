@@ -2,8 +2,10 @@ import location from "./icons/location.svg";
 import page from "./icons/pages.svg";
 import publish from "./icons/publisher.svg";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const Readbook = ({ book }) => {
   const {
+    bookId,
     image,
     bookName,
     author,
@@ -67,9 +69,11 @@ const Readbook = ({ book }) => {
             <button className="px-2 py-2 text-[#FFAC33] lg:px-5 lg:py-3 bg-[#ffac3326] rounded-xl">
               Rating: {rating}
             </button>
-            <button className="px-2 text-lg font-medium text-white py-2 lg:px-5 lg:py-3 bg-[#23BE0A] rounded-xl">
-              View Details
-            </button>
+            <Link to={`/single&book/${bookId}`}>
+              <button className="px-2 text-lg font-medium text-white py-2 lg:px-5 lg:py-3 bg-[#23BE0A] rounded-xl">
+                View Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>
