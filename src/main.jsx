@@ -10,7 +10,8 @@ import Singlebook from "./components/Singlebookpage/Singlebook";
 import ListedBook from "./components/ListedBook/ListedBook";
 import PageToRead from "./components/PageToRead/PageToRead";
 import Contact from "./components/Contact/Contact";
-import AboutUs from "./components/Navbar/Aboutus/AboutUs";
+import AboutUs from "./components/Aboutus/AboutUs";
+
 const router = createBrowserRouter([
   {
     path: "/",

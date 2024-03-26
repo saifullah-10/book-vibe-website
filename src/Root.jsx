@@ -23,7 +23,7 @@ function Root() {
             <Navbar></Navbar>
           </section>
           <BooksContext.Provider value={booksData}>
-            <section className="max-w-[1440px] w-[98%] lg:w-[80%] mx-auto lg:mt-5">
+            <section className="max-w-[1440px] w-[98%] lg:w-[80%] mx-auto lg:mt-5 lg:min-h-[calc(100vh-111px)]">
               <Outlet></Outlet>
             </section>
           </BooksContext.Provider>

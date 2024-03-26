@@ -16,8 +16,8 @@ const PageToRead = () => {
   const [readData] = useContext(ReadBook);
 
   return (
-    <div className="flex items-center justify-center w-full min-h-[calc(100vh - 83px)]">
-      <div className="w-full h-full">
+    <div className="flex items-center justify-center w-full min-h-[calc(100vh-111px)]">
+      <div className="w-full">
         {readData && readData.length > 0 ? (
           <ResponsiveContainer width="100%" height={500}>
             <BarChart data={readData}>
@@ -30,7 +30,7 @@ const PageToRead = () => {
             </BarChart>
           </ResponsiveContainer>
         ) : (
-          <div>No Data Please Read Book</div>
+          <p className="text-center">No Data Please Read Book</p>
         )}
       </div>
     </div>
