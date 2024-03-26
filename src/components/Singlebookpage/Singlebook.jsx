@@ -53,7 +53,7 @@ const Singlebook = () => {
         </div>
         <div className="lg:w-1/2">
           <div className="mb-3 border-b border-black lg:mb-5">
-            <h1>The Catcher in the Rye</h1>
+            <h1>{bookName}</h1>
             <p>By : {author}</p>
           </div>
           <div className="my-3 border-b border-black lg:my-5">

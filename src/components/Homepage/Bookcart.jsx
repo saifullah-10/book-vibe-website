@@ -5,25 +5,34 @@ const Bookcart = (book) => {
 
   return (
     <Link to={`/single&book/${bookId}`}>
-      <div className="p-5 border rounded-3xl">
+      <div className="p-5 border rounded-3xl font-['Work_Sans']">
         <div className="flex flex-col">
           <div className="flex self-center">
             <img src={image} alt={bookName} />
           </div>
           <div>
-            <div className="border-b border-dashed">
-              <div className="flex gap-2">
+            <div className="flex flex-col border-b-2 border-dashed">
+              <div className="flex gap-2 mt-4 mb-2 lg:mb-3">
                 {tags.map((tag, index) => (
-                  <p key={index}>{tag}</p>
+                  <p
+                    className="px-3 py-1 rounded-xl bg-[#23be0a0d] text-[#23BE0A] "
+                    key={index}
+                  >
+                    {tag}
+                  </p>
                 ))}
               </div>
-              <h1>{bookName}</h1>
-              <p>By : {publisher}</p>
+              <h1 className="font-['Playfair_Display'] text-xl lg:text-2xl font-bold lg:my-2 my-1">
+                {bookName}
+              </h1>
+              <p className="text-[#131313cc] font-medium lg:pb-4 pb-3">
+                By : {publisher}
+              </p>
             </div>
-            <div>
-              <p>Fiction</p>
-              <div>
-                <p>{rating}</p>
+            <div className="flex items-center justify-between my-2 lg:my-3">
+              <p className="text-[#131313cc] font-medium">Fiction</p>
+              <div className="flex items-center gap-2">
+                <p className="font-medium text-[#131313cc]">{rating}</p>
                 <img src={icon} alt="" />
               </div>
             </div>
