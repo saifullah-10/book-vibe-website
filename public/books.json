@@ -1,7 +1,7 @@
 [
   {
     "bookId": 1,
-    "bookName": "To Kill a Mockingbird",
+    "bookName": "Easter Joke Book",
     "sortName": "Mockingbird",
     "author": "Harper Lee",
     "image": "https://images-na.ssl-images-amazon.com/images/I/61kllnlY7YL._AC_UL254_SR254,254_.jpg",
@@ -29,7 +29,7 @@
   },
   {
     "bookId": 3,
-    "bookName": "The Great Gatsby",
+    "bookName": "Cixin Liu",
     "sortName": "Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "image": "https://images-na.ssl-images-amazon.com/images/I/919XM42JQlL._AC_UL254_SR254,254_.jpg",
@@ -43,7 +43,7 @@
   },
   {
     "bookId": 4,
-    "bookName": "Harry Potter and the Philosopher's Stone",
+    "bookName": "Madolibs",
     "sortName": "Harry Potter",
     "author": "J.K. Rowling",
     "image": "https://images-na.ssl-images-amazon.com/images/I/818PqOiT44L._AC_UL254_SR254,254_.jpg",
@@ -57,7 +57,7 @@
   },
   {
     "bookId": 5,
-    "bookName": "Pride and Prejudice",
+    "bookName": "Get It Together",
     "sortName": "Pride",
     "author": "Jane Austen",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81uxN1LVsML._AC_UL254_SR254,254_.jpg",
@@ -71,7 +71,7 @@
   },
   {
     "bookId": 6,
-    "bookName": "The Catcher in the Rye",
+    "bookName": "Try Not To Laugh",
     "sortName": "The Catcher",
     "author": "D. Salinger",
     "image": "https://images-na.ssl-images-amazon.com/images/I/41XZlhQ+5NL._AC_UL254_SR254,254_.jpg",

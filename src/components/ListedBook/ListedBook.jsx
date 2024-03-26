@@ -24,15 +24,17 @@ const ListedBook = () => {
   };
   console.log(readbook);
   return (
-    <div>
-      <div className="w-full text-center lg:py-8 bg-slate-200 rounded-xl">
-        <h2>Books</h2>
+    <div className="font-['Work_Sans']">
+      <div className="w-full py-5 mb-4 text-center rounded-lg lg:mb-8 lg:py-8 bg-slate-200">
+        <h2 className="lg:text-2xl text-xl font-bold text-[#131313]">Books</h2>
       </div>
-      <div>
-        <ul className=" menu lg:menu-horizontal bg-base-200 rounded-box">
+      <div className="flex justify-center mb-4 lg:mb-6">
+        <ul className="px-5 bg-green-400 menu lg:menu-horizontal rounded-box">
           <li>
             <details>
-              <summary>Sort By</summary>
+              <summary className="text-lg font-semibold text-white">
+                Sort By
+              </summary>
               <ul className="z-10">
                 <li className="w-[200px]" onClick={sortByYear}>
                   <a>By Publishing Year</a>
