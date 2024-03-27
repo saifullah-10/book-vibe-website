@@ -1,5 +1,5 @@
 Website Name: E-Book Store
-Website URL: https://660354c101e128128fbb4882--cute-douhua-be622f.netlify.app/
+Website URL: https://6603bb8bd72ffe5bfe2548c2--cute-douhua-be622f.netlify.app/
 
 Features:
 

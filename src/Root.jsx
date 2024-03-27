@@ -22,11 +22,11 @@ function Root() {
       <ChartData.Provider value={[chart, setChart]}>
         <Wishlist.Provider value={[wishList, setWishList]}>
           <ReadBook.Provider value={[readBook, setReadBook]}>
-            <section className="max-w-[1440px] w-[98%] lg:w-[80%] mx-auto mt-3 lg:mt-5 sticky top-0 z-20">
+            <section className="max-w-[1440px] w-[98%] lg:w-[85%] mx-auto mt-3 lg:mt-5 sticky top-0 z-20">
               <Navbar></Navbar>
             </section>
             <BooksContext.Provider value={booksData}>
-              <section className="max-w-[1440px] w-[98%] lg:w-[80%] mx-auto lg:mt-5 lg:min-h-[calc(100vh-111px)]">
+              <section className="max-w-[1440px] w-[98%] lg:w-[85%] mx-auto lg:mt-5 lg:min-h-[calc(100vh-111px)]">
                 <Outlet></Outlet>
               </section>
             </BooksContext.Provider>
