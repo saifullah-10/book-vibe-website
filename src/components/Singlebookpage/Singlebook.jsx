@@ -88,10 +88,10 @@ const Singlebook = () => {
           <div className="pb-4 border-b border-[#131313cc] lg:py-7">
             <div className="flex mt-4 lg:mt-0 lg:gap-5">
               <span className="text-[#131313] font-bold leading-6">Tag</span>
-              <div className="flex gap-3 lg:gap-5">
+              <div className="flex gap-1 lg:gap-5">
                 {tags?.map((tag, index) => (
                   <p
-                    className="px-3 py-1 rounded-xl bg-[#23be0a0d] text-[#23BE0A] "
+                    className="px-1 py-1 rounded-xl bg-[#23be0a0d] text-[#23BE0A] "
                     key={index}
                   >
                     #{tag}
@@ -101,7 +101,7 @@ const Singlebook = () => {
             </div>
           </div>
           <div className="my-5 lg:my-8">
-            <table width={500}>
+            <table className="lg:w-[500px] w-[350px]">
               <tr>
                 <td className="py-1 lg:py-2 text-[131313cc]">
                   Number of Pages:

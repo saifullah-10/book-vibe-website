@@ -5,7 +5,7 @@ const Bookcart = (book) => {
 
   return (
     <Link to={`/single&book/${bookId}`}>
-      <div className="p-5 border rounded-3xl font-['Work_Sans']">
+      <div className="lg:p-5 p-3 border rounded-3xl font-['Work_Sans']">
         <div className="flex flex-col">
           <div className="flex self-center">
             <img src={image} alt={bookName} />

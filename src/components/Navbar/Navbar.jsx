@@ -61,7 +61,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="text-xl btn btn-ghost text-[#131313] lg:text-3xl font-bold">
+          <a className="text-lg btn btn-ghost text-[#131313] lg:text-3xl font-bold">
             E-Book Store
           </a>
         </div>
@@ -104,10 +104,10 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="flex gap-1 lg:gap-3">
-            <a className="px-3 text-white py-2 lg:py-3 lg:px-6 rounded-xl bg-[#23BE0A] cursor-pointer text-base font-semibold lg:text-lg">
+            <a className="px-1 text-white py-1 lg:py-3 lg:px-6 rounded-xl bg-[#23BE0A] cursor-pointer text-base font-semibold lg:text-lg">
               Sign In
             </a>
-            <a className="px-3 text-white py-2 lg:py-3 lg:px-6 rounded-xl bg-[#59C6D2] cursor-pointer text-base font-semibold lg:text-lg">
+            <a className="px-1 text-white py-1 lg:py-3 lg:px-6 rounded-xl bg-[#59C6D2] cursor-pointer text-base font-semibold lg:text-lg">
               Sign Up
             </a>
           </div>

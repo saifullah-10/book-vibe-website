@@ -67,7 +67,8 @@ const ListedBook = () => {
             type="radio"
             name="my_tabs_2"
             role="tab"
-            className="tab"
+            style={{ width: "150px" }}
+            className=" tab"
             aria-label="Read Books"
             onClick={() => setState(true)}
             checked={state ? true : false}
@@ -92,6 +93,7 @@ const ListedBook = () => {
             name="my_tabs_2"
             role="tab"
             className="tab"
+            style={{ width: "150px" }}
             aria-label="Wishlist Books"
             onClick={() => setState(false)}
             checked={!state ? true : false}

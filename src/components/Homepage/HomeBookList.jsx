@@ -12,7 +12,7 @@ const HomeBookList = () => {
         </p>
       </div>
       <div className="grid gap-5 lg:grid-cols-3 lg:gap-8 ">
-        {booksData.map((book) => (
+        {booksData?.map((book) => (
           <>
             <Bookcart key={book.id} book={book}></Bookcart>
           </>
